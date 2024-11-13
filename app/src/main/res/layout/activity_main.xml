@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/navigateToSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAVIGATE TO SECONDARY ACTIVITY"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="First Input"
+                android:saveEnabled="false"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="Second Input"
+                android:saveEnabled="false"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonPressMe"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="PRESS ME!"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/buttonPressMeToo"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="PRESS ME, TOO!"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
